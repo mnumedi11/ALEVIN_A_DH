@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informes Post-Partido 25/26</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+  :root {
+    --azul: #00b4d8;
+    --azul-oscuro: #03045e;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(120deg, var(--azul-oscuro), #001233 70%);
+    color: white;
+    overflow-x: hidden;
+  }
+
+  header {
+    text-align: center;
+    padding: 40px 20px 20px;
+  }
+
+  header h1 {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+    background: linear-gradient(90deg, var(--azul), #caf0f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    padding: 40px 20px 100px;
+    position: relative;
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    background: var(--azul);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.4;
+  }
+
+  .card {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    overflow: hidden;
+    transform: skewX(-5deg);
+  }
+
+  .card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .card img {
+    width: 50%;
+    height: 230px;
+    object-fit: cover;
+    transform: skewX(5deg) scale(1.05);
+  }
+
+  .info {
+    padding: 25px;
+    width: 50%;
+    transform: skewX(5deg);
+  }
+
+  .info h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: var(--azul);
+  }
+
+  .info a {
+    text-decoration: none;
+    color: #000;
+    background: var(--azul);
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: all 0.2s;
+  }
+
+  .info a:hover {
+    background: #90e0ef;
+    color: var(--azul-oscuro);
+  }
+
+  /* ==== RESPONSIVE ==== */
+  @media (max-width: 750px) {
+    .timeline::before {
+      display: none;
+    }
+
+    .card {
+      flex-direction: column !important; /* ✅ fuerza misma orientación para todos */
+      transform: none;
+      width: 100%;
+      max-width: 100%;
+      border-radius: 16px;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      transform: none;
+      border-radius: 16px 16px 0 0;
+    }
+
+    .info {
+      width: 100%;
+      transform: none;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .info h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Informes Post-Partido 25/26</h1>
+</header>
+
+<section class="timeline">
+  <div class="card">
+    <img src="Jornada10.jpg" alt="Jornada 10">
+    <div class="info">
+      <h2>Jornada 10</h2>
+      <a href="InformeJ10.html">Ver Alineación Probable</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Jornada9.jpg" alt="Jornada 9">
+    <div class="info">
+      <h2>Jornada 9</h2>
+      <a href="InformeJ9.html">Ver Informe</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Jornada8.jpg" alt="Jornada 8">
+    <div class="info">
+      <h2>Jornada 8</h2>
+      <a href="InformeJ8.html">Ver Informe</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="Jornada7.jpg" alt="Jornada 7">
+    <div class="info">
+      <h2>Jornada 7</h2>
+      <a href="InformeJ7.html">Ver Informe</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="Jornada6.jpg" alt="Jornada 6">
+    <div class="info">
+      <h2>Jornada 6</h2>
+      <a href="InformeJ6.html">Ver Informe</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="Jornada5.jpg" alt="Jornada 5">
+    <div class="info">
+      <h2>Jornada 5</h2>
+      <a href="InformeJ5.html">Ver Informe</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="Jornada4.jpg" alt="Jornada 4">
+    <div class="info">
+      <h2>Jornada 4</h2>
+      <a href="InformeJ4.html">Ver Informe</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Jornada3.jpg" alt="Jornada 3">
+    <div class="info">
+      <h2>Jornada 3</h2>
+      <a href="InformeJ3.html">Ver Informe</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Jornada2.jpg" alt="Jornada 2">
+    <div class="info">
+      <h2>Jornada 2</h2>
+      <a href="InformeJ2.html">Ver Informe</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="Jornada1.jpg" alt="Jornada 1">
+    <div class="info">
+      <h2>Jornada 1</h2>
+      <a href="InformeJ1.html">Ver Informe</a>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
+
+
