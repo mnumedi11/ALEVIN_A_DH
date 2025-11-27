@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E.F.M.O. Boadilla 'B'</title>
+  <link rel="manifest" href="/EFMO_BOADILLA/manifest.json">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+
+    #installButton {
+  display: none;
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+#installButton:hover {
+  transform: scale(1.05);
+}
+
+    
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Trebuchet MS", sans-serif;
+      background: linear-gradient(160deg, #0d0d1a, #1a1a33);
+      color: #00fff7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title-container {
+      width: 90%;
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 15px 20px;
+      border-radius: 20px;
+      background: linear-gradient(90deg, #00d4ff, #a200ff);
+      box-shadow: 0 0 20px rgba(0,212,255,0.6), 0 0 30px rgba(162,0,255,0.4);
+      overflow: hidden;
+    }
+
+    .title {
+      font-size: 2.5em;
+      font-family: Oswald, fantasy;
+      font-weight: bold;
+      margin: 0;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .title span:nth-child(odd) { color: hsl(0,90%,55%); }
+    .title span:nth-child(even) { color: white; }
+
+    .panel-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      flex: 1;
+    }
+
+    .panel {
+      background: linear-gradient(145deg, #11112a, #1b1b4d);
+      border-radius: 25px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,255,255,0.2);
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .panel:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,255,255,0.3);
+    }
+
+    .panel-icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+      color: #00ff99;
+    }
+
+    .panel-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #00fff7;
+      text-shadow: 0 0 5px #00fff7;
+      font-family: "Trebuchet MS", sans-serif;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #00fff7;
+      font-size: 1.2em;
+      font-weight: bold;
+      font-family: "Trebuchet MS", sans-serif;
+      margin-top: auto;
+    }
+
+    /* Media Queries para dispositivos móviles */
+    @media (max-width: 768px) {
+      .title {
+        font-size: 1.8em;
+        white-space: normal;
+      }
+
+      .title-container {
+        padding: 12px 15px;
+        margin: 15px auto;
+      }
+
+      .panel-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 15px;
+      }
+
+      .panel {
+        padding: 20px 15px;
+      }
+
+      .panel-icon {
+        font-size: 50px;
+      }
+
+      footer {
+        font-size: 1em;
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 1.5em;
+      }
+
+      .title-container {
+        padding: 10px 12px;
+        margin: 10px auto;
+      }
+
+      .panel-container {
+        gap: 12px;
+        padding: 10px;
+      }
+
+      .panel {
+        padding: 15px 10px;
+      }
+
+      .panel-icon {
+        font-size: 45px;
+      }
+
+      .panel-title {
+        font-size: 1.1em;
+      }
+
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+ 
+<div class="title-container">
+  <h1 class="title">
+    <span>E.</span><span>F.</span><span>M.</span><span>O.</span>
+    <span>B</span><span>o</span><span>a</span><span>d</span><span>i</span><span>l</span><span>l</span><span>a</span>
+    <span>'</span><span>B</span><span>'</span>
+  </h1>
+</div>
+
+<div class="panel-container">
+  <a href="FantasyEfmo.html" class="panel">
+    <div class="panel-icon"><i class="fas fa-futbol"></i></div>
+    <div class="panel-title">Fantasy EFMO</div>
+  </a>
+
+  <a href="InformesPost_partido.html" class="panel">
+    <div class="panel-icon"><i class="fas fa-file-alt"></i></div>
+    <div class="panel-title">Informes post-partido</div>
+  </a>
+
+  <a href="Stats25-26.html" class="panel">
+    <div class="panel-icon"><i class="fas fa-chart-line"></i></div>
+    <div class="panel-title">Stats Temp. 25/26</div>
+  </a>
+
+  <a href="Encuestas_MVP2526.html" class="panel">
+    <div class="panel-icon"><i class="fas fa-star"></i></div>
+    <div class="panel-title">Encuestas MVP</div>
+  </a>
+
+  <a href="https://sofifa.com/user/36295111/players" target="_blank" class="panel">
+    <div class="panel-icon"><i class="fas fa-users"></i></div>
+    <div class="panel-title">Jugadores EA Sports FC 26</div>
+  </a>
+
+  <a href="Simbolog%C3%ADaYSistemaDePuntuaci%C3%B3n.html" class="panel">
+    <div class="panel-icon"><i class="fas fa-clipboard-list"></i></div>
+    <div class="panel-title">Simbología y sistema de puntuación</div>
+  </a>
+</div>
+
+<button id="installButton" style="display:none; padding:10px 20px; border:none; border-radius:8px; background:#0078ff; color:white; font-size:16px;">
+  📲 Añadir a pantalla de inicio
+</button>
+  
+<script>
+  let deferredPrompt;
+  const addBtn = document.getElementById('installButton');
+
+  // Escucha el evento que indica que se puede instalar la PWA
+  window.addEventListener('beforeinstallprompt', (e) => {
+    // Evita que el navegador muestre el banner automático
+    e.preventDefault();
+    deferredPrompt = e;
+    // Muestra el botón
+    addBtn.style.display = 'block';
+  });
+
+  // Cuando el usuario hace clic en el botón
+  addBtn.addEventListener('click', async () => {
+    addBtn.style.display = 'none';
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      console.log(`Instalación: ${outcome}`);
+      deferredPrompt = null;
+    }
+  });
+
+  // Si ya está instalada, ocultamos el botón
+  window.addEventListener('appinstalled', () => {
+    console.log('PWA instalada');
+    addBtn.style.display = 'none';
+  });
+</script>
+
+  
+<footer>
+  Creador de la página web:<br>Gabriel Veiga Álvarez
+</footer>
+  
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/EFMO_BOADILLA/service-worker.js')
+      .then(() => console.log('✅ Service worker registrado'))
+      .catch(err => console.error('❌ Error registrando service worker', err));
+  }
+</script>
+
+</body>
+</html>
